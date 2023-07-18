@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "YTLINKER",
+    "version": "1.0",
+    "description": "Download YouTube videos by pasting a link.",
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "ytlinkr16.png",
+        "48": "ytlinkr48.png",
+        "128": "ytlinkr128.png"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "permissions": ["downloads", "http://*/*", "https://*/*"]
+}
